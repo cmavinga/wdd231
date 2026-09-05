@@ -4,33 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="A site header containing an svg logo, the author name as the site name, and a hamburger icon.">
-    <meta name="author" content="Christian MAVINGA | WDD231">
-    <title>Side Header</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <title>Kinshasa Chamber of Commerce</title>
+    <meta name="author" content="Christian Mavinga | WDD 231">
+    <meta name="description" content="This website will serve as a resource hub for businesses in the city of Kinshasa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <script src="scripts/chamber.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/teaching.png" width="512" height="512">
+        <img src="images/bank.svg" width="512" height="512">
         <span>Christian Mavinga</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="#">News & Events</a></li>
-            <li class="current"><a href="#">Dedicated Temples</a></li>
-            <li><a href="#">Announced Temples</a></li>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
     <main>
-        <h1>Dedicated Temples</h1>
+        <h1>Home</h1>
+        <div class="top-row">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>My name is Christian Mavinga. I am from DR Congo. I am passionate about education, leadership, and
+                    helping others grow through learning and faith. I enjoy developing practical solutions with
+                    technology,
+                    particularly through Python programming and data management. I value meaningful relationships and
+                    believe that consistent effort leads to lasting success.</p>
+            </section>
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" width="200" height="246">
+            </section>
+        </div>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </div>
+            <div class="course-list">
+
+            </div>
+        </section>
     </main>
     <footer>
-        <div class="name"></div>
         <ul>
             <li><a href="https://www.linkedin.com/feed/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
                         width="16" height="16" fill="#0A66C2" class="bi bi-linkedin" viewBox="0 0 16 16">
@@ -57,8 +84,6 @@
         <p>© <span id="currentyear"></span> | Christian MAVINGA | DR Congo</p>
         <p id="lastModified"></p>
     </footer>
-
-    <script src="scripts/navigation.js"></script>
 </body>
 
 </html>

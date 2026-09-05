@@ -17,11 +17,10 @@
     }
 
     .navigation {
-        display: block;
         border: solid 1px #eee;
     }
 
-    .navigation ul {
+    ul {
         display: flex;
     }
 

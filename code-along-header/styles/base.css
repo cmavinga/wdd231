@@ -25,6 +25,8 @@ header span {
     color: #00308f;
 }
 
+/* Hamburger Navigation Layouts */
+
 .hamburger {
     background: none;
     border: none;
@@ -38,4 +40,49 @@ header span {
 
 .hamburger.show::before {
     content: "\00D7";
+}
+
+/* nav Links Layouts */
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    /*remove bullets */
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    /* we've change the default display inline to block */
+    padding: 0.8rem 10px;
+    text-decoration: none;
+    /* change the default color blue.*/
+    color: #00308f;
+    border-bottom: solid 1px #eee;
+}
+
+.navigation a:hover {
+    background-color: skyblue;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+h1 {
+    margin-left: 10px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
 }
