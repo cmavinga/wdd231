@@ -45,30 +45,28 @@ ul {
     display: block;
     padding: 0.8rem 10px;
     text-decoration: none;
-    color: #00308f;
-    border-bottom: solid 1px #eee;
+    color: #fff;
+    border-bottom: solid 1px #000;
+    background-color: #555;
+
 }
 
 .navigation a:hover {
     background-color: skyblue;
 }
 
-.navigation li.current {
-    background-color: #eee;
+.navigation li.current a {
+    background-color: #A9A9A9;
 }
 
-h1,
-h2 {
-    text-align: center;
-    background-color: black;
-    color: #fff;
-    padding: 5px;
+h1 {
+    color: black;
 
 }
 
 .about-me,
 .student-photo {
-    background-color: #eee;
+    background-color: #87CEEB;
 }
 
 .about-me p {
@@ -79,6 +77,10 @@ h2 {
 
 .student-photo {
     text-align: center;
+}
+
+.student-photo img {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
 }
 
 .top-row {
@@ -112,24 +114,41 @@ h2 {
 .course-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
+    gap: 20px;
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section {
+    background-color: #87CEEB;
+    height: 320px;
 }
 
 .wdd,
 .cse {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
+    filter: brightness(1.1);
+    width: 200px;
+    height: 10px;
     text-align: center;
     padding: 10px;
     background-color: #eee;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
+.wdd:hover,
+.cse:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
 
 footer {
     text-align: center;
 }
 
 footer p {
-    background-color: black;
+    background-color: #002f6c;
     color: #fff;
     margin: 0;
     padding: 10px;
