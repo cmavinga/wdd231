@@ -45,51 +45,10 @@
 
     }
 
-    .about-me,
-    .student-photo {
-        background-color: #87CEEB;
-    }
-
-    .about-me p {
-        line-height: 1.6;
-        text-align: justify;
-        margin: 10px;
-    }
-
-    .student-photo {
-        text-align: center;
-    }
-
-    .student-photo img {
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 1);
-    }
-
     .top-row {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 20px;
-    }
-
-    .filter {
-        display: flex;
-        justify-content: center;
-        column-gap: 1rem;
-        margin: 20px 0;
-    }
-
-    .filter button {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        background-color: #eee;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-    .filter button:hover {
-        background-color: #555;
-        color: #fff;
     }
 
     .course-list {
@@ -100,28 +59,4 @@
         margin: 0 auto;
         text-align: center;
     }
-
-    section {
-        background-color: #87CEEB;
-        height: 320px;
-    }
-
-    .wdd,
-    .cse {
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 1);
-        filter: brightness(1.1);
-        width: 200px;
-        height: 10px;
-        text-align: center;
-        padding: 10px;
-        background-color: #eee;
-        margin: 0.5rem;
-    }
-
-    .wdd:hover,
-    .cse:hover {
-        transform: scale(1.1);
-        transition: transform 0.3s ease;
-    }
-
 }

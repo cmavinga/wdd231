@@ -97,9 +97,8 @@ function createCourseCard(filteredCourses) {
 
   filteredCourses.forEach(course => {
     let card = document.createElement("section");
-    card.classList.add("course", course.subject.toLowerCase()); // add base + subject class
+    card.classList.add("course", course.subject.toLowerCase());
 
-    // Only subject + number
     let name = document.createElement("div");
     name.textContent = `${course.subject} ${course.number}`;
     card.appendChild(name);
@@ -108,10 +107,8 @@ function createCourseCard(filteredCourses) {
   });
 }
 
-// Initial load
 createCourseCard(courses);
 
-// Filter buttons
 document.querySelector("#cse").addEventListener("click", () => {
   let cse = courses.filter(course => course.subject === "CSE");
   createCourseCard(cse);
@@ -125,3 +122,4 @@ document.querySelector("#wdd").addEventListener("click", () => {
 document.querySelector("#all").addEventListener("click", () => {
   createCourseCard(courses);
 });
+
