@@ -123,3 +123,7 @@ document.querySelector("#all").addEventListener("click", () => {
   createCourseCard(courses);
 });
 
+// const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
+// console.log("Total credits:", totalCredits);
+
+
