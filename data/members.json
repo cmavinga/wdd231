@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Kinshasa Tech Solutions",
+        "address": "123 Boulevard du 30 Juin, Kinshasa, DRC",
+        "phone": "+243 800 111 222",
+        "website": "https://kinshasatech.com",
+        "image": "kinshasatech.jpg",
+        "membershipLevel": 3,
+        "industry": "IT Services",
+        "description": "Providing innovative software and networking solutions."
+    },
+    {
+        "name": "Riverfront Café",
+        "address": "45 Avenue de la Paix, Kinshasa, DRC",
+        "phone": "+243 800 333 444",
+        "website": "https://riverfrontcafe.com",
+        "image": "riverfrontcafe.jpg",
+        "membershipLevel": 2,
+        "industry": "Hospitality",
+        "description": "A cozy café with a view of the Congo River."
+    },
+    {
+        "name": "GreenLeaf Farms",
+        "address": "Plot 12, Kingabwa, Kinshasa, DRC",
+        "phone": "+243 800 555 666",
+        "website": "https://greenleaffarms.com",
+        "image": "greenleaf.jpg",
+        "membershipLevel": 1,
+        "industry": "Agriculture",
+        "description": "Organic produce and sustainable farming practices."
+    },
+    {
+        "name": "Lumumba Bookstore",
+        "address": "78 Limete Avenue, Kinshasa, DRC",
+        "phone": "+243 800 777 888",
+        "website": "https://lumumbabooks.com",
+        "image": "lumumbabooks.jpg",
+        "membershipLevel": 2,
+        "industry": "Retail",
+        "description": "Specializing in African literature and educational materials."
+    },
+    {
+        "name": "Skyline Construction",
+        "address": "Plot 9, Gombe District, Kinshasa, DRC",
+        "phone": "+243 800 999 000",
+        "website": "https://skylineconstruction.com",
+        "image": "skyline.jpg",
+        "membershipLevel": 3,
+        "industry": "Construction",
+        "description": "Building modern infrastructure across Kinshasa."
+    },
+    {
+        "name": "Congo Travel Agency",
+        "address": "22 Airport Road, Ndjili, Kinshasa, DRC",
+        "phone": "+243 801 111 222",
+        "website": "https://congotravel.com",
+        "image": "congotravel.jpg",
+        "membershipLevel": 1,
+        "industry": "Tourism",
+        "description": "Offering guided tours and travel packages."
+    },
+    {
+        "name": "Bright Future Academy",
+        "address": "14 Education Street, Bandalungwa, Kinshasa, DRC",
+        "phone": "+243 801 333 444",
+        "website": "https://brightfutureacademy.com",
+        "image": "brightfuture.jpg",
+        "membershipLevel": 2,
+        "industry": "Education",
+        "description": "Private school focused on bilingual learning."
+    }
+]
