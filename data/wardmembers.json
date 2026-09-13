@@ -1,0 +1,29 @@
+{
+    "family name": "Mavinga",
+    "date_moved_in": "2026-07-01",
+    "number_people": 4,
+    "visited_by_bishopric": true,
+    "family_members": [
+    {
+      "name": "Christian Mavinga",
+      "gender": "Male",
+      "birthdate": "1969-12-14"
+    },
+    {
+      "name": "Mariam Ngeni",
+      "gender": "Female",
+      "birthdate": "1978-04-12"
+    },
+    {
+      "name": "Kevin Mavinga",
+      "gender": "Male",
+      "birthdate": "2003-04-26"
+    },
+    {
+      "name": "Divayn Mavinga",
+      "gender": "Male",
+      "birthdate": "2009-07-04"
+    }
+  ]
+}
+

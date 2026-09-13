@@ -127,3 +127,4 @@ document.querySelector("#all").addEventListener("click", () => {
 // console.log("Total credits:", totalCredits);
 
 
+
