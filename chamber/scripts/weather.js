@@ -23,8 +23,8 @@ function displayCompanies(data) {
 
     const selected = shuffled.slice(0, 3);
 
-    const container = document.querySelector(".spotlights");
-    container.innerHTML = "";
+    const members = document.querySelector(".members");
+    members.innerHTML = "";
 
     selected.forEach(company => {
         const card = document.createElement("div");
@@ -37,10 +37,8 @@ function displayCompanies(data) {
       <a href="${company.website}" target="_blank">Visit Website</a>
     `;
 
-        container.appendChild(card);
+        members.appendChild(card);
     });
-
-
 }
 
 const currentUrl = "https://api.openweathermap.org/data/2.5/weather?lat=-4.3270&lon=15.2739&appid=2dab558edf248e7393d3ba97af5d9d2e&units=metric";

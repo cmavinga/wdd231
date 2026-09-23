@@ -127,7 +127,7 @@ header p,
     gap: 1rem;
 }
 
-.events h2 {
+.events h1 {
     grid-column: 1 / -1;
     text-align: center;
     margin: 1rem 0;
@@ -162,10 +162,46 @@ header p,
     height: auto;
 }
 
+.spotlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+}
+
+.spotlights h2 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
+.members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / -1;
+    grid-row: 2;
+    gap: 1rem;
+}
+
+.members div {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    background: #f5deb3;
+}
+
+.members div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
 .spotlights img {
     width: 120px;
     height: 100px;
-    border-radius: 8px;
+    border-radius: 6px;
     margin-top: 0.5rem;
     justify-self: left;
 }
@@ -176,6 +212,12 @@ header p,
     color: var(--accent-color);
 }
 
+.spotlights a:hover {
+    background: var(--primary-color);
+}
+
+
+
 figcaption p {
     padding: 0.5rem;
     margin-left: 2rem;
@@ -185,7 +227,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* padding: 20px; */
     padding: 1rem;
     margin-top: 1rem;
     background-color: var(--accent-color);
