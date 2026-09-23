@@ -18,6 +18,7 @@ body {
     margin: 0;
     font-family: var(--font-body);
     color: var(--text-color);
+    background-color: #f5deb3;
 }
 
 .top {
@@ -71,6 +72,11 @@ main {
     gap: 1.5rem;
 }
 
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
 h1 {
     margin-left: 10px;
@@ -81,13 +87,15 @@ h1 {
     text-align: center;
 }
 
-.business {
+.business,
+.spotlights {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 0.5rem;
 }
 
-.card {
+.card,
+.spotlights div {
     background-color: #eee;
     text-align: center;
     padding: 1rem;
@@ -95,19 +103,53 @@ h1 {
     border-radius: 10px;
 }
 
-header {
+header,
+.spotlights p {
     border-bottom: 1px solid #000000;
 }
 
-header h2 {
+header h2,
+h3 {
     font-family: var(--font-heading);
     color: var(--primary-color);
     margin-top: 0;
 }
 
-header p {
+header p,
+.spotlights p {
     padding-bottom: 0.5rem;
 }
+
+.events {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+}
+
+.events h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
+.events article {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 0 1rem;
+}
+
+.weather {
+    text-align: center;
+    background-color: #87CE;
+    padding: 1rem;
+    margin: 0;
+}
+
 
 .card-info {
     display: flex;
@@ -118,6 +160,20 @@ header p {
 .card-info img {
     width: 120px;
     height: auto;
+}
+
+.spotlights img {
+    width: 120px;
+    height: 100px;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    justify-self: left;
+}
+
+.spotlights a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--accent-color);
 }
 
 figcaption p {
@@ -133,7 +189,7 @@ footer {
     padding: 1rem;
     margin-top: 1rem;
     background-color: var(--accent-color);
-    color: var(--light-text);
+    color: var(--text-color);
 
 }
 

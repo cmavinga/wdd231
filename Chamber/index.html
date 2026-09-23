@@ -9,7 +9,7 @@
     <meta name="description" content="This website will serve as a resource hub for businesses in the city of Kinshasa">
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-large.css">
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <link rel="icon" href="images/favicon.ico">
     <meta property="og:title" content="Coordination S&I kinshasa">
     <meta property="og:description"
@@ -24,8 +24,8 @@
         <span>Kinshasa Chamber of Commerce</span>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
                 <li><a href="#" class="theme-toggle">⚪</a></li>
@@ -35,16 +35,36 @@
     </header>
 
     <main>
-        <div>
-            <h1>Directory</h1>
-            <div class="filter">
-                <button id="grid">Grid</button>
-                <button id="list">List</button>
-            </div>
-        </div>
+        <section class="hero">
+            <img src="images/chambrecommerceKin.jpg" alt="Chambre du Commerce de Kinshasa" class="hero-image">
+        </section>
 
-        <div id="members" class="business"></div>
+        <!-- Current Events -->
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <article>
+                <h3>Business Networking Night</h3>
+                <p>Date: October 15, 2026</p>
+                <p>Location: City Hall Conference Center</p>
+            </article>
+            <article>
+                <h3>Entrepreneurship Workshop</h3>
+                <p>Date: November 2, 2026</p>
+                <p>Location: Chamber HQ</p>
+            </article>
+        </section>
 
+        <!-- Weather Section -->
+        <section class="weather">
+            <p>The current temperature in Kinshasa, DR Congo is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+        </section>
+
+        <!-- Company Spotlights -->
+        <section class="spotlights"></section>
     </main>
     <footer>
         <div class="footer-contact">
