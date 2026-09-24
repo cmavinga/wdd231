@@ -1,7 +1,9 @@
-.members {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+@media screen and (max-width: 499px) {
+    .members {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
 
 @media (min-width: 600px) {
