@@ -4,7 +4,7 @@ const lastModifiedParagraph = document.getElementById("lastModified");
 lastModifiedParagraph.textContent = "Last Modified: " + document.lastModified;
 
 const url = "data/members.json";
-const cards = document.querySelector("#members");
+const cards = document.querySelector(".members");
 
 async function getCompanyData() {
     try {
@@ -27,13 +27,13 @@ function displayCompanies(data) {
     members.innerHTML = "";
 
     selected.forEach(company => {
-        const card = document.createElement("div");
-        card.classList.add("company-card");
+        const card = document.createElement("article");
+        card.classList.add("member");
 
         card.innerHTML = `
+        <img src="images/${company.image}" alt="${company.name}" width=150 height=145>
       <h3>${company.name}</h3>
       <p>${company.description}</p>
-      <img src="images/${company.image}" alt="${company.name}" width=150 height=145>
       <a href="${company.website}" target="_blank">Visit Website</a>
     `;
 
