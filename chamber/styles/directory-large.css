@@ -1,18 +1,15 @@
 .members {
     display: grid;
     grid-template-columns: 1fr;
-    /* default: single column on mobile */
     gap: 1rem;
 }
 
-/* Tablet view: 2 columns */
-@media (min-width: 768px) {
+@media (min-width: 600px) {
     .members {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Laptop/Desktop view: 3 columns */
 @media (min-width: 1024px) {
     .members {
         grid-template-columns: repeat(3, 1fr);
