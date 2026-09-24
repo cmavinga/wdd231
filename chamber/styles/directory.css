@@ -154,6 +154,13 @@ header p,
     margin: 0;
 }
 
+.weather h2 {
+    text-align: center;
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+    padding: 1rem;
+}
+
 
 .card-info {
     display: flex;
