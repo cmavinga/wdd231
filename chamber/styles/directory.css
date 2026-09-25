@@ -201,7 +201,7 @@ header p,
 .spotlights h2 {
     text-align: center;
     padding: 1rem;
-    font-family: var(--font-heading);
+    font-family: 'Merriweather', serif;
     color: var(--primary-color);
 }
 
