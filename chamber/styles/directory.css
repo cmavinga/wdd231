@@ -83,6 +83,7 @@ h1 {
     padding: 1rem;
     font-family: var(--font-heading);
     color: var(--primary-color);
+    text-align: center;
 }
 
 .filter {
@@ -92,7 +93,7 @@ h1 {
 .business,
 .spotlights {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 0.5rem;
 }
 
@@ -105,13 +106,13 @@ h1 {
     border-radius: 10px;
 }
 
-header,
+.card header,
 .spotlights p {
     border-bottom: 1px solid #000000;
 }
 
 header h2,
-h3 {
+header h3 {
     font-family: var(--font-heading);
     color: var(--primary-color);
     margin-top: 0;
@@ -161,16 +162,29 @@ header p,
     padding: 1rem;
 }
 
+.card {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+}
 
 .card-info {
     display: flex;
-    align-items: center;
-    margin-top: 1rem;
+    gap: 1rem;
+    align-items: flex-start;
 }
 
 .card-info img {
     width: 120px;
-    height: auto;
+    flex-shrink: 0;
+}
+
+.card-info a {
+    word-break: break-word;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.card-info a:hover {
+    color: var(--accent-color);
 }
 
 .spotlights {
@@ -221,7 +235,7 @@ header p,
 }
 
 .spotlights a:hover {
-    background: var(--primary-color);
+    color: white;
 }
 
 
