@@ -16,7 +16,7 @@
 
 body {
     margin: 0;
-    font-family: var(--font-body);
+    font-family: 'Open Sans', sans-serif;
     color: var(--text-color);
     background-color: #f5deb3;
 }
@@ -81,7 +81,7 @@ main {
 h1 {
     margin-left: 10px;
     padding: 1rem;
-    font-family: var(--font-heading);
+    font-family: 'Merriweather', serif;
     color: var(--primary-color);
     text-align: center;
 }
@@ -113,7 +113,7 @@ h1 {
 
 header h2,
 header h3 {
-    font-family: var(--font-heading);
+    font-family: 'Merriweather', serif;
     color: var(--primary-color);
     margin-top: 0;
 }
@@ -134,7 +134,7 @@ header p,
     grid-column: 1 / -1;
     text-align: center;
     margin: 1rem 0;
-    font-family: var(--font-heading);
+    font-family: 'Merriweather', serif;
     color: var(--primary-color);
 
 }
@@ -157,28 +157,34 @@ header p,
 
 .weather h2 {
     text-align: center;
-    font-family: var(--font-heading);
+    font-family: 'Merriweather', serif;
     color: var(--primary-color);
     padding: 1rem;
 }
 
 .card {
     box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+    overflow: hidden;
+    padding: 1rem;
 }
 
 .card-info {
     display: flex;
     gap: 1rem;
     align-items: flex-start;
+    padding-top: 1rem;
 }
 
 .card-info img {
     width: 120px;
-    flex-shrink: 0;
+}
+
+.card-info p {
+    margin: 0 0 0.8rem;
+    line-height: 1.5;
 }
 
 .card-info a {
-    word-break: break-word;
     text-decoration: none;
     color: var(--primary-color);
 }
