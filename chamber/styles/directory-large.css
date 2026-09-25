@@ -1,18 +1,47 @@
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav button {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 499px) {
-    .members {
+
+    .members,
+    .events {
         display: grid;
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
+    footer {
+        display: block;
+        text-align: center;
+    }
+
+    footer li {
+        align-items: center;
+    }
 }
 
 @media (min-width: 600px) {
-    .members {
+
+    .members,
+    .events {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (min-width: 1024px) {
+
     .members {
         grid-template-columns: repeat(3, 1fr);
     }
