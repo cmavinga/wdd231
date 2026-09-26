@@ -25,23 +25,6 @@ header span {
     color: #00308f;
 }
 
-/* Hamburger Navigation Layouts */
-
-.hamburger {
-    background: none;
-    border: none;
-    color: #00308f;
-    cursor: pointer;
-}
-
-.hamburger::before {
-    content: "\2630";
-}
-
-.hamburger.show::before {
-    content: "\00D7";
-}
-
 /* nav Links Layouts */
 
 .navigation {

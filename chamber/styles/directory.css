@@ -3,6 +3,9 @@
     --secondary-color: #87CEEB;
     --accent-color: #ff6600;
     --text-color: #000000;
+    --background-color: #f5deb3;
+    --card-color: #eee;
+    --border-color: #000;
     --light-text: #ffffff;
     --font-heading: 'Merriweather', serif;
     --font-body: 'Open Sans', sans-serif;
@@ -18,7 +21,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     color: var(--text-color);
-    background-color: #f5deb3;
+    background-color: var(--background-color)
 }
 
 .top {
@@ -47,6 +50,7 @@ header span {
     border: none;
     color: #00308f;
     cursor: pointer;
+    font-size: 2rem
 }
 
 .hamburger::before {
@@ -106,8 +110,7 @@ h1 {
     text-align: center;
 }
 
-.business,
-.spotlights {
+.business {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 0.5rem;
@@ -115,7 +118,7 @@ h1 {
 
 .card,
 .spotlights div {
-    background-color: #eee;
+    background-color: var(--card-color);
     text-align: center;
     padding: 1rem;
     margin: 10px;
@@ -124,7 +127,7 @@ h1 {
 
 .card header,
 .spotlights p {
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid var(--border-color);
 }
 
 header h2,
@@ -136,7 +139,7 @@ header h3 {
 
 header p,
 .spotlights p {
-    padding-bottom: 0.5rem;
+    padding: 0.5rem 0;
 }
 
 .events {
@@ -157,9 +160,9 @@ header p,
 
 .events article {
     text-align: center;
-    background: #f9f9f9;
+    background: var(--card-color);
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--border-color);
     border-radius: 10px;
     margin: 0 1rem;
 }
@@ -216,7 +219,6 @@ header p,
 
 .spotlights h2 {
     text-align: center;
-    padding: 1rem;
     font-family: 'Merriweather', serif;
     color: var(--primary-color);
 }
@@ -233,7 +235,7 @@ header p,
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    background: #f5deb3;
+    background: var(--background-color);
     border-radius: 6px;
     padding: 1rem;
 }
@@ -248,7 +250,7 @@ header p,
     max-width: 120px;
     height: auto;
     border-radius: 6px;
-    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .spotlights a {

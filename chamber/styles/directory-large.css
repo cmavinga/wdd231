@@ -1,19 +1,27 @@
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-}
+@media screen and (max-width: 499px) {
 
-@media (max-width: 768px) {
-    nav ul {
+    .hamburger {
+        background: none;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .hamburger::before {
+        content: "\2630";
+    }
+
+    .hamburger.show::before {
+        content: "\00D7";
+    }
+
+    .nav-bar {
         display: none;
     }
 
-    nav button {
+    .nav-bar.show {
         display: block;
     }
-}
-
-@media screen and (max-width: 499px) {
 
     .members,
     .events {
@@ -29,6 +37,16 @@ nav ul {
 
     footer li {
         align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+
+    nav button {
+        display: block;
     }
 }
 
