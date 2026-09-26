@@ -75,7 +75,7 @@ async function apiFetch() {
 function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp.toFixed(1)}&deg;C`;
 
-    const iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    const iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
     const desc = data.weather[0].description;
 
     weatherIcon.src = iconSrc;

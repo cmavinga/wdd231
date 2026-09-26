@@ -3,8 +3,9 @@
     .hamburger {
         background: none;
         border: none;
-        color: #fff;
+        color: var(--light-text);
         cursor: pointer;
+        font-size: 2rem
     }
 
     .hamburger::before {

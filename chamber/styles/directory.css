@@ -45,22 +45,6 @@ header span {
     color: var(--light-text);
 }
 
-.hamburger {
-    background: none;
-    border: none;
-    color: #00308f;
-    cursor: pointer;
-    font-size: 2rem
-}
-
-.hamburger::before {
-    content: "\2630";
-}
-
-.hamburger.show::before {
-    content: "\00D7";
-}
-
 ul {
     display: flex;
 }
@@ -105,7 +89,7 @@ main {
 
 .cta-btn {
     position: absolute;
-    bottom: 50%;
+    bottom: 20%;
     transform: translateX(-50%);
     background: var(--accent-color);
     color: var(--text-color);
@@ -202,6 +186,11 @@ header p,
     font-family: 'Merriweather', serif;
     color: var(--primary-color);
     padding: 1rem;
+}
+
+.weather img {
+    width: 150px;
+    height: 150px;
 }
 
 #forecast-container p {
