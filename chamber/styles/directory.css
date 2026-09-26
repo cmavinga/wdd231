@@ -92,10 +92,32 @@ main {
     gap: 1.5rem;
 }
 
+.hero {
+    position: relative;
+    text-align: center;
+}
+
 .hero-image {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.cta-btn {
+    position: absolute;
+    bottom: 52%;
+    transform: translateX(-50%);
+    background: var(--accent-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.cta-btn:hover {
+    background: var(--background-color);
+    color: var(--text-color);
 }
 
 h1 {
@@ -174,11 +196,16 @@ header p,
     margin: 0;
 }
 
-.weather h2 {
+.weather h2,
+.forecast H2 {
     text-align: center;
     font-family: 'Merriweather', serif;
     color: var(--primary-color);
     padding: 1rem;
+}
+
+#forecast-container p {
+    text-align: center;
 }
 
 .card {
@@ -255,7 +282,8 @@ header p,
 
 .spotlights a {
     text-decoration: none;
-    color: var(--accent-color);
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 .spotlights a:hover {
@@ -278,6 +306,11 @@ footer {
     background-color: var(--accent-color);
     color: var(--text-color);
 
+}
+
+.footer-contact a {
+    color: var(--text-color);
+    font-size: 1.1rem;
 }
 
 .social {

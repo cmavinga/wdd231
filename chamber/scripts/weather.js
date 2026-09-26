@@ -55,6 +55,7 @@ const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=-4.327
 const currentTemp = document.querySelector("#current-temp");
 const weatherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector("figcaption");
+const forecastContainer = document.querySelector("#forecast-container");
 
 async function apiFetch() {
     try {
@@ -75,17 +76,26 @@ function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp.toFixed(1)}&deg;C`;
 
     const iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    let desc = data.weather[0].description;
+    const desc = data.weather[0].description;
 
-    weatherIcon.setAttribute("src", iconSrc);
-    weatherIcon.setAttribute("alt", desc);
+    weatherIcon.src = iconSrc;
+    weatherIcon.alt = desc;
 
-    captionDesc.textContent = `${desc}`;
+    captionDesc.textContent = desc;
+
+
 }
 
 function displayForecast(data) {
     const tomorrow = data.list[8];
     console.log("Tomorrow:", tomorrow.main.temp, tomorrow.weather[0].description);
+
+    const temp = tomorrow.main.temp.toFixed(1);
+    const desc = tomorrow.weather[0].description;
+
+    const card = document.createElement("p");
+    card.textContent = `Tomorrow - ${temp}°C, ${desc}`;
+    forecastContainer.appendChild(card);
 }
 
-apiFetch();
+apiFetch(); 
