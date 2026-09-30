@@ -364,8 +364,6 @@ form input[type="submit"]:hover {
     flex-direction: column;
 }
 
-.membership-card h1 {}
-
 .membership-cards {
     display: flex;
     flex-direction: column;
