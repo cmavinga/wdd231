@@ -92,7 +92,7 @@ const courses = [
 ]
 
 function createCourseCard(filteredCourses) {
-  const list = document.querySelector(".course-list");
+  const list = document.querySelector("#course-list");
   list.innerHTML = "";
 
   filteredCourses.forEach(course => {
@@ -102,6 +102,21 @@ function createCourseCard(filteredCourses) {
     let name = document.createElement("div");
     name.textContent = `${course.subject} ${course.number}`;
     card.appendChild(name);
+
+    const modal = document.querySelector("#courseModal");
+    const closeModal = document.querySelector("#closeModal");
+    const modalTitle = document.querySelector("#modal-title");
+    const modalDescription = document.querySelector("#modal-description");
+
+    card.addEventListener("click", () => {
+      modalTitle.textContent = course.title;
+      modalDescription.textContent = course.description;
+      modal.showModal();
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.close();
+    });
 
     list.appendChild(card);
   });
@@ -125,6 +140,3 @@ document.querySelector("#all").addEventListener("click", () => {
 
 // const totalCredits = courses.reduce((sum, course) => sum + course.credits, 0);
 // console.log("Total credits:", totalCredits);
-
-
-
