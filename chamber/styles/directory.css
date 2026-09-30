@@ -5,7 +5,6 @@
     --text-color: #000000;
     --background-color: #f0f8ff;
     --card-color: #eee;
-    --border-color: #000;
     --light-text: #ffffff;
     --font-heading: 'Merriweather', serif;
     --font-body: 'Open Sans', sans-serif;
@@ -74,6 +73,7 @@ main {
     display: grid;
     grid-template-rows: auto 1fr;
     gap: 1.5rem;
+    padding: 1rem;
 }
 
 .hero {
@@ -133,7 +133,7 @@ h1 {
 
 .card header,
 .spotlights p {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--text-color);
 }
 
 header h2,
@@ -168,7 +168,7 @@ header p,
     text-align: center;
     background: var(--card-color);
     padding: 1rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--text-color);
     border-radius: 10px;
     margin: 0 1rem;
 }
@@ -357,7 +357,7 @@ form input[type="submit"]:hover {
     background: var(--primary-color);
 }
 
-/* membership-card layout */
+/* membership-card */
 
 .form-and-cards {
     display: flex;
@@ -407,10 +407,6 @@ form input[type="submit"]:hover {
 }
 
 /* Confirmation Box */
-
-main {
-    padding: 1rem;
-}
 
 .confirmation-box {
     border: 1px solid var(--card-color);
