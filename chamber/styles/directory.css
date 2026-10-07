@@ -432,8 +432,15 @@ nav ul {
 
 .cards {
     display: grid;
+    grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
+}
+
+.cards img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .card {
@@ -441,18 +448,4 @@ nav ul {
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Small Screens (default in styles.css): */
-
-.cards {
-    grid-template-areas:
-        "card1"
-        "card2"
-        "card3"
-        "card4"
-        "card5"
-        "card6"
-        "card7"
-        "card8";
 }

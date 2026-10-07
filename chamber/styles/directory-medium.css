@@ -1,0 +1,15 @@
+@media (min-width: 641px) and (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards img {
+        transform: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .cards img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+        filter: brightness(1.1);
+    }
+}

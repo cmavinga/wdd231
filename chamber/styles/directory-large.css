@@ -92,56 +92,18 @@
 
 /* Discover HTML */
 
-/* Medium Screens (641–1024px): */
-
-@media (min-width: 641px) and (max-width: 1024px) {
-    .cards {
-        grid-template-areas:
-            "card1 card2"
-            "card3 card4"
-            "card5 card6"
-            "card7 card8";
-    }
-}
-
-/* Large Screens (1025px+): */
-
 @media (min-width: 1025px) {
     .cards {
-        grid-template-areas:
-            "card1 card2 card3 card4"
-            "card5 card6 card7 card8";
+        grid-template-columns: repeat(4, 1fr);
     }
-}
 
-#card1 {
-    grid-area: card1;
-}
+    .cards img {
+        transform: transform 0.3s ease, filter 0.3s ease;
+    }
 
-#card2 {
-    grid-area: card2;
-}
-
-#card3 {
-    grid-area: card3;
-}
-
-#card4 {
-    grid-area: card4;
-}
-
-#card5 {
-    grid-area: card5;
-}
-
-#card6 {
-    grid-area: card6;
-}
-
-#card7 {
-    grid-area: card7;
-}
-
-#card8 {
-    grid-area: card8;
+    .cards img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+        filter: brightness(1.1);
+    }
 }
