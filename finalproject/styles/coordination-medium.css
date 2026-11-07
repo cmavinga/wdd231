@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}

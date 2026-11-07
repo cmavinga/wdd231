@@ -41,7 +41,7 @@ const displayCompanies = (companies) => {
 
         let caption = document.createElement('figcaption');
         caption.innerHTML = `
-      <p>Email: ${company.address}</p>
+      <p>Address: ${company.address}</p>
       <p>Phone: ${company.phone}</p>
       <p><a href="${company.website}" target="_blank">${company.website}</a></p>
     `;
